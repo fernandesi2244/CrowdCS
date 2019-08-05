@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContributeActivity">
+
+    <LinearLayout
+        android:layout_width="333dp"
+        android:layout_height="659dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/questionBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enterQuestion"
+            android:textColor="#050000"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/questionSubmissionBox"
+            android:layout_width="match_parent"
+            android:layout_height="177dp"
+            android:ems="10"
+            android:hint="@string/questionHint"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/answerChoiceA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/firstAnswerChoiceHint"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/answerChoiceB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/secondAnswerChoiceHint"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/answerChoiceC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/thirdAnswerChoiceHint"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/answerChoiceD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/fourthAnswerChoiceHint"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/rightAnswerBelow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enterCorrectAnsBelow"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/enterAns"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:onClick="submitQuestion"
+            android:text="@string/submit"
+            android:textColor="@color/lovelyWhite"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LanguageSelectionActivity">
+
+    <TextView
+        android:id="@+id/chooseLanguageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/chooseLanguage"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="311dp"
+        android:layout_height="557dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseLanguageTextView">
+
+        <Button
+            android:id="@+id/javaButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:onClick="javaSelection"
+            android:text="@string/javaString"
+            android:textColor="@color/lovelyWhite" />
+
+        <Button
+            android:id="@+id/javascriptButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:onClick="javascriptSelection"
+            android:text="@string/javascriptString"
+            android:textColor="@color/lovelyWhite" />
+
+        <Button
+            android:id="@+id/pythonButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:onClick="pythonSelection"
+            android:text="@string/pythonString"
+            android:textColor="@color/lovelyWhite" />
+
+        <Button
+            android:id="@+id/cPlusPlusButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:onClick="cPlusPlusSelection"
+            android:text="@string/cPlusPlusString"
+            android:textColor="@color/lovelyWhite" />
+
+        <Button
+            android:id="@+id/cSharpButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:onClick="cSharpSelection"
+            android:text="@string/cSharpString"
+            android:textColor="@color/lovelyWhite" />
+
+        <Button
+            android:id="@+id/swiftButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:onClick="swiftSelection"
+            android:text="@string/swiftString"
+            android:textColor="@color/lovelyWhite" />
+
+        <Button
+            android:id="@+id/rubyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:onClick="rubySelection"
+            android:text="@string/rubyString"
+            android:textColor="@color/lovelyWhite" />
+
+        <Button
+            android:id="@+id/kotlinButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:onClick="kotlinSelection"
+            android:text="@string/kotlinString"
+            android:textColor="@color/lovelyWhite" />
+
+        <Button
+            android:id="@+id/rustButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:onClick="rustSelection"
+            android:text="@string/rustString"
+            android:textColor="@color/lovelyWhite" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

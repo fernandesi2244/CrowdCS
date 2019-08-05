@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">CrowdCS</string>
+
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+    <!-- Change the following strings as required -->
+    <string name="back4app_app_id">zc3wRDwQembnooGVdm2yJ2lIyw7LVbmSnlkeWnBQ</string>
+    <string name="back4app_client_key">PNesqG4SISLrelMhKX1YVpeEjjV0jWU4BFpzILli</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="signUp">Sign Up</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="createAccount">Create Account!</string>
+    <string name="login">Log In</string>
+    <string name="profile">My Profile</string>
+    <string name="defaultTextBox">TextView</string>
+    <string name="logOut">Log Out</string>
+    <string name="whereAmI">I don\'t know how I got here! Let me just log in...</string>
+    <string name="start">Let\'s Get to Work!</string>
+    <string name="chooseLanguage">Choose a language to continue!</string>
+    <string name="javaString">Java</string>
+    <string name="javascriptString">Javascript</string>
+    <string name="pythonString">Python</string>
+    <string name="cPlusPlusString">C++</string>
+    <string name="cSharpString">C#</string>
+    <string name="swiftString">Swift</string>
+    <string name="rubyString">Ruby</string>
+    <string name="kotlinString">Kotlin</string>
+    <string name="rustString">Rust</string>
+    <string name="chooseOne">Choose One of the Options to Get Started</string>
+    <string name="enterQuestion">Enter Your Question Below</string>
+    <string name="firstAnswerChoiceHint">Enter your first answer choice here.</string>
+    <string name="secondAnswerChoiceHint">Enter your second answer choice here.</string>
+    <string name="thirdAnswerChoiceHint">Enter your third answer choice here.</string>
+    <string name="fourthAnswerChoiceHint">Enter your fourth answer choice here.</string>
+    <string name="enterCorrectAnsBelow">Enter the correct answer below exactly as it appears in the answer choice.</string>
+    <string name="questionHint">Type your question here.</string>
+    <string name="enterAns">Enter the answer here exactly as it appears in the answer choice above.</string>
+    <string name="submit">Submit</string>
+    <string name="editDescription">Picture of Pencil</string>
+    <string name="quizDescription">Picture of Question Mars</string>
+    <string name="defaultButtonText">Button</string>
+</resources>
