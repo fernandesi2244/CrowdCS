@@ -7,27 +7,34 @@
     tools:context=".GameActivitySelectionActivity">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/chooseOptionTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="28dp"
         android:text="@string/chooseOne"
-        android:textSize="24sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:layout_width="311dp"
-        android:layout_height="520dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="50dp"
+        android:layout_width="342dp"
+        android:layout_height="626dp"
+        android:layout_marginTop="24dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.848">
+        app:layout_constraintTop_toBottomOf="@+id/chooseOptionTextView">
+
+        <TextView
+            android:id="@+id/contributeCaption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/writeOwnQ"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
 
         <ImageButton
             android:id="@+id/editButton"
@@ -37,13 +44,40 @@
             android:onClick="goToContribute"
             app:srcCompat="@drawable/pencil" />
 
+        <TextView
+            android:id="@+id/quizCaption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/takeQ"
+            android:textColor="@color/colorPrimary"
+            android:textSize="24sp" />
+
         <ImageButton
             android:id="@+id/quizButton"
             android:layout_width="match_parent"
-            android:layout_height="373dp"
+            android:layout_height="313dp"
             android:contentDescription="@string/quizDescription"
             android:onClick="goToQuiz"
             app:srcCompat="@drawable/questionmark" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:progress="5" />
+
+        <TextView
+            android:id="@+id/howManyQuestionsCurrently"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/defaultTextBox"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

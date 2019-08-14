@@ -39,4 +39,9 @@
     <string name="editDescription">Picture of Pencil</string>
     <string name="quizDescription">Picture of Question Mars</string>
     <string name="defaultButtonText">Button</string>
+    <string name="seeYouSoon">See you soon!</string>
+    <string name="enterExplanation">Enter an explanation</string>
+    <string name="writeOwnQ">Write your own Question!</string>
+    <string name="takeQ">Take a quiz!</string>
+    <string name="sliderPrompt">Use the slider to set the number of questions that you would like in the quiz.</string>
 </resources>

@@ -80,6 +80,14 @@
             android:hint="@string/enterAns"
             android:inputType="textPersonName" />
 
+        <EditText
+            android:id="@+id/explanation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/enterExplanation"
+            android:inputType="textPersonName" />
+
         <Button
             android:id="@+id/submitButton"
             android:layout_width="match_parent"

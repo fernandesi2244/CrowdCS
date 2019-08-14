@@ -35,6 +35,7 @@ public class ContributeActivity extends AppCompatActivity {
         EditText choiceC = (EditText) (findViewById(R.id.answerChoiceC));
         EditText choiceD = (EditText) (findViewById(R.id.answerChoiceD));
         EditText answer = (EditText) (findViewById(R.id.answer));
+        EditText explanation = (EditText) (findViewById(R.id.explanation));
 
         String questionString = question.getText().toString();
         String choiceAString = choiceA.getText().toString();
@@ -42,6 +43,7 @@ public class ContributeActivity extends AppCompatActivity {
         String choiceCString = choiceC.getText().toString();
         String choiceDString = choiceD.getText().toString();
         String answerString = answer.getText().toString();
+        String explanationString = explanation.getText().toString();
 
         if(!answerString.equals(choiceAString)&&!answerString.equals(choiceBString)&&!answerString.equals(choiceCString)&&!answerString.equals(choiceDString)){
             ////////////////////////////////////////////////////////////////
@@ -57,6 +59,7 @@ public class ContributeActivity extends AppCompatActivity {
             questionObject.put("questionText", questionString);
             questionObject.put("answerText", answerString);
             questionObject.put("programmingLanguage", language);
+            questionObject.put("explanation", explanationString);
             questionObject.put("whoSharedIt", ParseUser.getCurrentUser().getUsername());
             questionObject.addAllUnique("answerChoices", Arrays.asList(choiceAString, choiceBString, choiceCString, choiceDString));
             // Saving object
