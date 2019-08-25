@@ -2,9 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.gmail.fernandesi2244.crowdcs">
 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:name=".App"
         android:allowBackup="true"
@@ -14,14 +11,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".DisplayResultsActivity"
+            android:label="Results"/>
+        <activity
+            android:name=".ExplanationsActivity"
+            android:label="Review" />
+        <activity
             android:name=".QuizActivity"
-            android:label="Quiz"/>
+            android:label="Quiz" />
         <activity
             android:name=".ContributeActivity"
-            android:label="Contribute a Question"/>
+            android:label="Contribute a Question" />
         <activity
             android:name=".GameActivitySelectionActivity"
-            android:label="Select an Activity!"/>
+            android:label="Select an Activity!" />
         <activity
             android:name=".LanguageSelectionActivity"
             android:label="Language Selection" />
@@ -59,5 +62,8 @@
             android:name="com.parse.CLIENT_KEY"
             android:value="@string/back4app_client_key" />
     </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

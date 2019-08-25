@@ -41,6 +41,7 @@ public class GameActivitySelectionActivity extends AppCompatActivity {
         String language = receivedIntent.getStringExtra(LanguageSelectionActivity.PROGRAMMING_LANGUAGE);
 
         SeekBar questionSeekBar = (SeekBar)(findViewById(R.id.seekBar));
+
         Intent sendIntent = new Intent(this, QuizActivity.class);
         sendIntent.putExtra(PROGRAMMING_LANGUAGE_ACTIVITY_SELECTION, language);
         sendIntent.putExtra(NUMBER_QUESTIONS, questionSeekBar.getProgress());

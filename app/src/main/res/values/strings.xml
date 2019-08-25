@@ -44,4 +44,11 @@
     <string name="writeOwnQ">Write your own Question!</string>
     <string name="takeQ">Take a quiz!</string>
     <string name="sliderPrompt">Use the slider to set the number of questions that you would like in the quiz.</string>
+    <string name="correctAnswer">Correct Answer:</string>
+    <string name="yourAnswer">Your Answer:</string>
+    <string name="explanation">Explanation:</string>
+    <string name="nextQuestion">Next Question</string>
+    <string name="noCorrect">Number Correct:</string>
+    <string name="noWrong">Number Wrong:</string>
+    <string name="score">Score:</string>
 </resources>
