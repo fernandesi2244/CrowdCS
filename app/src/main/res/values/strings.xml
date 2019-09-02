@@ -51,4 +51,5 @@
     <string name="noCorrect">Number Correct:</string>
     <string name="noWrong">Number Wrong:</string>
     <string name="score">Score:</string>
+    <string name="goBack">Back</string>
 </resources>

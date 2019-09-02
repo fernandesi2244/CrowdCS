@@ -6,29 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".LanguageSelectionActivity">
 
-    <TextView
-        android:id="@+id/chooseLanguageTextView"
+    <Button
+        android:id="@+id/backButtonToProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="@string/chooseLanguage"
-        android:textColor="@color/colorAccent"
-        android:textSize="18sp"
+        android:layout_marginBottom="24dp"
+        android:onClick="goBack"
+        android:text="@string/goBack"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
-        android:layout_width="311dp"
-        android:layout_height="557dp"
+        android:layout_width="315dp"
+        android:layout_height="477dp"
         android:layout_marginStart="50dp"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="50dp"
         android:layout_marginRight="50dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="24dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/backButtonToProfile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/chooseLanguageTextView">
@@ -116,4 +115,16 @@
 
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/chooseLanguageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/chooseLanguage"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

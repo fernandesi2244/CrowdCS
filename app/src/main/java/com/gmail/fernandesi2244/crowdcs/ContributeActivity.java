@@ -45,6 +45,7 @@ public class ContributeActivity extends AppCompatActivity {
         String answerString = answer.getText().toString();
         String explanationString = explanation.getText().toString();
 
+        //If answer box does not match any answer choices, don't allow question to be submitted and provide the user with an error message.
         if(!answerString.equals(choiceAString)&&!answerString.equals(choiceBString)&&!answerString.equals(choiceCString)&&!answerString.equals(choiceDString)){
             ////////////////////////////////////////////////////////////////
             //DEBUGGING TIME!
@@ -62,6 +63,8 @@ public class ContributeActivity extends AppCompatActivity {
             questionObject.put("explanation", explanationString);
             questionObject.put("whoSharedIt", ParseUser.getCurrentUser().getUsername());
             questionObject.addAllUnique("answerChoices", Arrays.asList(choiceAString, choiceBString, choiceCString, choiceDString));
+
+
             // Saving object
             questionObject.saveInBackground(new SaveCallback() {
                 @Override
@@ -72,10 +75,9 @@ public class ContributeActivity extends AppCompatActivity {
                         ParseUser currentUser = ParseUser.getCurrentUser();
                         currentUser.put("totalQuestionsContributed",currentUser.getInt("totalQuestionsContributed")+1);
                         currentUser.saveInBackground();
-
                     } else {
                         // Error
-                        Toast.makeText(getApplicationContext(), "Something happened :( Please try again or restart the app.", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "Something went wrong :( Please try again or restart the app.", Toast.LENGTH_LONG).show();
                     }
                 }
             });

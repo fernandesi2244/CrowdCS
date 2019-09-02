@@ -73,4 +73,9 @@ public class LanguageSelectionActivity extends AppCompatActivity {
         intent.putExtra(PROGRAMMING_LANGUAGE, getResources().getString(R.string.rustString));
         startActivity(intent);
     }
+
+    public void goBack (View view) {
+        Intent intent = new Intent(this, ProfileActivity.class);
+        startActivity(intent);
+    }
 }

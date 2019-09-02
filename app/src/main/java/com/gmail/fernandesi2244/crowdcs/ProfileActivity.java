@@ -42,7 +42,7 @@ public class ProfileActivity extends AppCompatActivity {
 
         double avgPercentCorrect = currentUser.getDouble("AvgPercentCorrect");
         TextView percentCorrectBox = findViewById(R.id.displayAvgPercentCorrect);
-        percentCorrectBox.setText("Average Percentage Correct: "+avgPercentCorrect*100+"%");
+        percentCorrectBox.setText("Average Percentage Correct: "+String.format("%.2f%%", avgPercentCorrect));
 
         int totalQuestionsContributed = currentUser.getInt("totalQuestionsContributed");
         TextView questionsContributedBox = findViewById(R.id.displayQuestionsContributed);

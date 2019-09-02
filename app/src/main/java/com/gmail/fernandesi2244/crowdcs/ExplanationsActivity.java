@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.parse.ParseObject;
 
@@ -33,11 +34,17 @@ public class ExplanationsActivity extends AppCompatActivity {
         Intent receivedIntent = getIntent();
         questionList = (ArrayList<ParseObject>)(receivedIntent.getSerializableExtra(QuizActivity.QUESTIONS));
         answerList = (ArrayList<String>)(receivedIntent.getSerializableExtra(QuizActivity.ANSWERS));
-        noOfQuestions = questionList.size();
+        noOfQuestions = receivedIntent.getIntExtra(QuizActivity.NO_OF_QUESTIONS_CHOSEN, -1);
         questionNo = 0;
         noRight = 0;
 
-        updateScreen(questionList, questionNo);
+        if(noOfQuestions<0) {
+            Toast.makeText(getApplicationContext(), "Quiz Activity intent not properly received. Please try again!", Toast.LENGTH_LONG).show();
+            Intent goToProfile = new Intent(this, ProfileActivity.class);
+            startActivity(goToProfile);
+        }else {
+            updateScreen(questionList, questionNo);
+        }
     }
 
     public void updateScreen(List<ParseObject> relevantQuestionsList, int questionNumber) {

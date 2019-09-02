@@ -46,6 +46,7 @@ public class SignInActivity extends AppCompatActivity {
                         currentUser.put("AvgPercentCorrect",0);
                         currentUser.put("totalQuestionsAnswered",0);
                         currentUser.put("totalAnswersCorrect",0);
+                        currentUser.put("noOfQuizzesTaken",0);
                         currentUser.put("totalQuestionsContributed", 0);
                         Intent myIntent = new Intent(SignInActivity.this, ProfileActivity.class);
                         startActivity(myIntent);

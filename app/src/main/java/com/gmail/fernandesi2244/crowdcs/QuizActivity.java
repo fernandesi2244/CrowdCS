@@ -24,6 +24,7 @@ public class QuizActivity extends AppCompatActivity {
 
     public static final String QUESTIONS = "com.gmail.fernandesi2244.crowdcs.QUESTION_VALUES";
     public static final String ANSWERS = "com.gmail.fernandesi2244.crowdcs.ANSWER_VALUES";
+    public static final String NO_OF_QUESTIONS_CHOSEN = "com.gmail.fernandesi2244.crowdcs.NUMBER_OF_QUESTIONS_CHOSEN";
 
     private ArrayList<String> chosenAnswers;
     private List<ParseObject> relevantQuestions;
@@ -122,6 +123,7 @@ public class QuizActivity extends AppCompatActivity {
         Intent goToProfile = new Intent(this, ExplanationsActivity.class);
         goToProfile.putExtra(QUESTIONS, listCopy);
         goToProfile.putExtra(ANSWERS, chosenAnswers);
+        goToProfile.putExtra(NO_OF_QUESTIONS_CHOSEN, noOfQuestions);
         startActivity(goToProfile);
     }
 
