@@ -26,17 +26,16 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void logIn(View view) {
-        EditText username = (EditText)(findViewById(R.id.usernameBox));
-        EditText password = (EditText)(findViewById(R.id.passwordBox));
+        EditText username = (EditText) (findViewById(R.id.usernameBox));
+        EditText password = (EditText) (findViewById(R.id.passwordBox));
 
         final String USERNAME_STRING = username.getText().toString();
 
-        ParseUser.logInInBackground(username.getText().toString(),password.getText().toString(), new LogInCallback() {
+        ParseUser.logInInBackground(username.getText().toString(), password.getText().toString(), new LogInCallback() {
             @Override
             public void done(ParseUser parseUser, ParseException e) {
                 if (parseUser != null) {
-                    //alertDisplayer("Sucessful Login","Welcome back" + <Insert Username Here> + "!");
-                    Toast.makeText(getApplicationContext(), "Successful Login. Welcome back "+USERNAME_STRING+"!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Successful Login. Welcome back " + USERNAME_STRING + "!", Toast.LENGTH_LONG).show();
                     Intent intent = new Intent(LoginActivity.this, ProfileActivity.class);
                     startActivity(intent);
                 } else {

@@ -40,27 +40,31 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="answerChoicePicked"
-            android:text="@string/defaultButtonText" />
+            android:text="@string/defaultButtonText"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/buttonForChoiceB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="answerChoicePicked"
-            android:text="@string/defaultButtonText" />
+            android:text="@string/defaultButtonText"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/buttonForChoiceC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="answerChoicePicked"
-            android:text="@string/defaultButtonText" />
+            android:text="@string/defaultButtonText"
+            android:textAllCaps="false" />
 
         <Button
             android:id="@+id/buttonForChoiceD"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="answerChoicePicked"
-            android:text="@string/defaultButtonText" />
+            android:text="@string/defaultButtonText"
+            android:textAllCaps="false" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -52,4 +52,5 @@
     <string name="noWrong">Number Wrong:</string>
     <string name="score">Score:</string>
     <string name="goBack">Back</string>
+    <string name="logoDescription">CrowdCS Logo</string>
 </resources>

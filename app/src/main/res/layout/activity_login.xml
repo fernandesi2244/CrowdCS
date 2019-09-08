@@ -4,18 +4,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/dark_login_background"
     tools:context=".LoginActivity">
+
+    <Button
+        android:id="@+id/signUpBtn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="launchSignIn"
+        android:text="@string/signUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/logoDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="409dp"
         android:layout_height="242dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="40dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
 
         <EditText
             android:id="@+id/usernameBox"
@@ -23,7 +49,11 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/username"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:textColor="@color/lovelyWhite"
+            android:textColorHighlight="@color/colorAccent"
+            android:textColorHint="@color/lovelyWhite"
+            android:textColorLink="@color/colorPrimary" />
 
         <EditText
             android:id="@+id/passwordBox"
@@ -31,7 +61,11 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/password"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textColor="@color/lovelyWhite"
+            android:textColorHighlight="@color/colorAccent"
+            android:textColorHint="@color/lovelyWhite"
+            android:textColorLink="@color/colorPrimary" />
 
         <Button
             android:id="@+id/logInButton"
@@ -40,17 +74,10 @@
             android:background="@color/colorPrimary"
             android:onClick="logIn"
             android:text="@string/login"
-            android:textColor="@color/lovelyWhite" />
+            android:textColor="@color/lovelyWhite"
+            android:textColorHighlight="@color/colorAccent"
+            android:textColorLink="@color/colorPrimary" />
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/signUpBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:onClick="launchSignIn"
-        android:text="@string/signUp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 </androidx.constraintlayout.widget.ConstraintLayout>
