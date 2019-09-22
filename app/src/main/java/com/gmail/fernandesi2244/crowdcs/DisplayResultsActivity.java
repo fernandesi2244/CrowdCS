@@ -61,14 +61,9 @@ public class DisplayResultsActivity extends AppCompatActivity {
 
         ParseUser currentUser = ParseUser.getCurrentUser();
         currentUser.increment("noOfQuizzesTaken");
-        try {
-            double newPercentAverage = (currentUser.getDouble("AvgPercentCorrect") + doublePercentage) / currentUser.getInt("noOfQuizzesTaken");
-            currentUser.put("AvgPercentCorrect", newPercentAverage);
-        } catch (ArithmeticException e) {
-            Toast.makeText(getApplicationContext(), "Something went wrong :( Please try again or restart the app.", Toast.LENGTH_LONG).show();
-            if (currentUser.getInt("noOfQuizzesTaken") < 0)
-                currentUser.put("noOfQuizzesTaken", 0);
-        }
+
+        double newPercentAverage = (currentUser.getDouble("AvgPercentCorrect") + doublePercentage) / 2;
+        currentUser.put("AvgPercentCorrect", newPercentAverage);
 
         currentUser.increment("totalQuestionsAnswered", totalQuestions);
         currentUser.increment("totalAnswersCorrect", noCorrect);

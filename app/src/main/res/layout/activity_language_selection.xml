@@ -45,7 +45,7 @@
             android:id="@+id/javascriptButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorAccent"
+            android:background="@color/analogousPurple"
             android:onClick="javascriptSelection"
             android:text="@string/javascriptString"
             android:textColor="@color/lovelyWhite" />
@@ -63,7 +63,7 @@
             android:id="@+id/cPlusPlusButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorAccent"
+            android:background="@color/analogousPurple"
             android:onClick="cPlusPlusSelection"
             android:text="@string/cPlusPlusString"
             android:textColor="@color/lovelyWhite" />
@@ -81,7 +81,7 @@
             android:id="@+id/swiftButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorAccent"
+            android:background="@color/analogousPurple"
             android:onClick="swiftSelection"
             android:text="@string/swiftString"
             android:textColor="@color/lovelyWhite" />
@@ -99,7 +99,7 @@
             android:id="@+id/kotlinButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorAccent"
+            android:background="@color/analogousPurple"
             android:onClick="kotlinSelection"
             android:text="@string/kotlinString"
             android:textColor="@color/lovelyWhite" />
@@ -123,7 +123,7 @@
         android:layout_marginTop="50dp"
         android:text="@string/chooseLanguage"
         android:textColor="@color/colorAccent"
-        android:textSize="18sp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

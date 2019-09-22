@@ -6,4 +6,6 @@
     <color name="lovelyWhite">#F7F7F7</color>
     <color name="wrongRed">#FD0303</color>
     <color name="correctGreen">#1BFD02</color>
+    <color name="analogousPurple">#4B4EA0</color>
+    <color name="complementaryBrown">#A05F4B</color>
 </resources>

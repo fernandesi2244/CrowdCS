@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileActivity">
+    tools:context=".ProfileActivity"
+    android:background="@drawable/dark_login_background">
 
     <TextView
         android:id="@+id/textView"
@@ -12,6 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:text="@string/profile"
+        android:textColor="@color/lovelyWhite"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,6 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/defaultTextBox"
+            android:textColor="@color/lovelyWhite"
             android:textSize="18sp" />
 
         <TextView
@@ -39,6 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/defaultTextBox"
+            android:textColor="@color/lovelyWhite"
             android:textSize="18sp" />
 
         <TextView
@@ -46,6 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/defaultTextBox"
+            android:textColor="@color/lovelyWhite"
             android:textSize="18sp" />
 
         <TextView
@@ -53,6 +58,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/defaultTextBox"
+            android:textColor="@color/lovelyWhite"
             android:textSize="18sp" />
 
         <TextView
@@ -60,6 +66,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/defaultTextBox"
+            android:textColor="@color/lovelyWhite"
             android:textSize="18sp" />
 
         <LinearLayout
@@ -67,15 +74,6 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/startButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@color/colorPrimary"
-                android:onClick="goToSelectionScreen"
-                android:text="@string/start"
-                android:textColor="@color/lovelyWhite" />
         </LinearLayout>
     </LinearLayout>
 
@@ -84,8 +82,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="220dp"
+        android:background="@color/analogousPurple"
         android:onClick="logOut"
         android:text="@string/logOut"
+        android:textColor="@color/lovelyWhite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -97,7 +97,22 @@
         android:layout_height="0dp"
         android:layout_marginTop="24dp"
         android:text="@string/seeYouSoon"
+        android:textColor="@color/lovelyWhite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logOutButton" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:onClick="goToSelectionScreen"
+        android:text="@string/start"
+        android:textColor="@color/lovelyWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
