@@ -35,7 +35,6 @@ public class SignInActivity extends AppCompatActivity {
             final String USERNAME_STRING = username.getText().toString();
             user.setUsername(USERNAME_STRING);
             user.setPassword(password.getText().toString());
-            //user.setAvgPercentCorrect(0);
             user.signUpInBackground(new SignUpCallback() {
                 @Override
                 public void done(ParseException e) {
@@ -43,7 +42,7 @@ public class SignInActivity extends AppCompatActivity {
                         //alertDisplayer("Successful Sign Up!", "Welcome " +  USERNAME_STRING +"!");
                         Toast.makeText(getApplicationContext(), "Successful Sign Up! Welcome "+USERNAME_STRING+"!", Toast.LENGTH_LONG).show();
                         ParseUser currentUser = ParseUser.getCurrentUser();
-                        currentUser.put("AvgPercentCorrect",0);
+                        currentUser.put("totalPoints",0.0);
                         currentUser.put("totalQuestionsAnswered",0);
                         currentUser.put("totalAnswersCorrect",0);
                         currentUser.put("noOfQuizzesTaken",0);

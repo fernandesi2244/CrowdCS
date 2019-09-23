@@ -60,11 +60,9 @@ public class DisplayResultsActivity extends AppCompatActivity {
         double doublePercentage = Double.parseDouble(percentage);
 
         ParseUser currentUser = ParseUser.getCurrentUser();
+
         currentUser.increment("noOfQuizzesTaken");
-
-        double newPercentAverage = (currentUser.getDouble("AvgPercentCorrect") + doublePercentage) / 2;
-        currentUser.put("AvgPercentCorrect", newPercentAverage);
-
+        currentUser.increment("totalPoints", doublePercentage);
         currentUser.increment("totalQuestionsAnswered", totalQuestions);
         currentUser.increment("totalAnswersCorrect", noCorrect);
 

@@ -34,7 +34,9 @@
             android:gravity="center"
             android:text="@string/writeOwnQ"
             android:textColor="@color/colorPrimary"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
 
         <ImageButton
             android:id="@+id/editButton"
@@ -51,7 +53,9 @@
             android:gravity="center"
             android:text="@string/takeQ"
             android:textColor="@color/colorPrimary"
-            android:textSize="24sp" />
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
 
         <ImageButton
             android:id="@+id/quizButton"

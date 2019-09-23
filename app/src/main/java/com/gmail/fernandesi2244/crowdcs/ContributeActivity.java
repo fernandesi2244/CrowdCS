@@ -47,12 +47,9 @@ public class ContributeActivity extends AppCompatActivity {
 
         //If answer box does not match any answer choices, don't allow question to be submitted and provide the user with an error message.
         if(!answerString.equals(choiceAString)&&!answerString.equals(choiceBString)&&!answerString.equals(choiceCString)&&!answerString.equals(choiceDString)){
-            ////////////////////////////////////////////////////////////////
-            //DEBUGGING TIME!
-            //TextView testing = findViewById(R.id.debugBox);
-            //testing.setText(answer.getText().toString());
-            ////////////////////////////////////////////////////////////////
             Toast.makeText(getApplicationContext(), "Sorry, but the answer does not match any answer choice that you provided! Please try again.", Toast.LENGTH_LONG).show();
+        } else if(questionString.equals("")||explanationString.equals("")||answerString.equals("")||choiceAString.equals("")||choiceBString.equals("")||choiceCString.equals("")||choiceDString.equals("")) {
+            Toast.makeText(getApplicationContext(), "Sorry, but at least one of the fields above is empty. Fix the problem and try again!", Toast.LENGTH_LONG).show();
         } else {
             // Configure Query
             ParseObject questionObject = new ParseObject("Question");

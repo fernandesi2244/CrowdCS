@@ -1,18 +1,14 @@
 package com.gmail.fernandesi2244.crowdcs;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.parse.GetCallback;
-import com.parse.ParseObject;
-import com.parse.ParseQuery;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.parse.ParseUser;
-import com.parse.ParseException;
 
 public class ProfileActivity extends AppCompatActivity {
 
@@ -40,32 +36,13 @@ public class ProfileActivity extends AppCompatActivity {
         TextView answeredCorrectBox = findViewById(R.id.displayTotalCorrect);
         answeredCorrectBox.setText("Total Number of Answers Correct: "+totalAnswersCorrect);
 
-        double avgPercentCorrect = currentUser.getDouble("AvgPercentCorrect");
+        double avgPercentCorrect = currentUser.getInt("noOfQuizzesTaken")==0? 0: currentUser.getDouble("totalPoints")/currentUser.getInt("noOfQuizzesTaken");
         TextView percentCorrectBox = findViewById(R.id.displayAvgPercentCorrect);
         percentCorrectBox.setText("Average Percentage Correct: "+String.format("%.2f%%", avgPercentCorrect));
 
         int totalQuestionsContributed = currentUser.getInt("totalQuestionsContributed");
         TextView questionsContributedBox = findViewById(R.id.displayQuestionsContributed);
         questionsContributedBox.setText("Total Number of Questions Contributed: "+totalQuestionsContributed);
-
-
-
-        /*ParseQuery<ParseObject> query = ParseQuery.getQuery("User");
-        query.whereEqualTo("objectId", "9CeHVIvQQ3");
-        //query.whereEqualTo("objectId", ParseUser.getCurrentUser().getObjectId());
-
-        query.getFirstInBackground(new GetCallback<ParseObject>() {
-            public void done(ParseObject player, ParseException e) {
-                if (e == null) {
-                    String username = player.getString("username");
-                    TextView usernameBox = findViewById(R.id.displayUsername);
-                    usernameBox.setText(username);
-                    //int yearOfBirth = player.getInt("yearOfBirth");
-                } else {
-                    // Something is wrong
-                }
-            }
-        });*/
 
     }
 

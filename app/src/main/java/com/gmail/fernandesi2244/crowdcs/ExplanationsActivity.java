@@ -3,6 +3,7 @@ package com.gmail.fernandesi2244.crowdcs;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -70,8 +71,12 @@ public class ExplanationsActivity extends AppCompatActivity {
             TextView explanationDisplay = findViewById(R.id.explanationDisplay_Exp);
             explanationDisplay.setText(current.getString("explanation"));
 
-            if(current.getString("answerText").equals(answerList.get(questionNumber)))
+            if(current.getString("answerText").equals(answerList.get(questionNumber))) {
                 noRight++;
+                userAnswerDisplay.setTextColor(Color.GREEN);
+            } else {
+                userAnswerDisplay.setTextColor(Color.RED);
+            }
 
         }
     }
