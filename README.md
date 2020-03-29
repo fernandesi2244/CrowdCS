@@ -2,7 +2,7 @@
 A Fun and Engaging Crowdsourcing App for Learning Programming Languages
 
 ## Inspiration
-I have multiple apps for programming quizzes, and I really liked how using them helped me in Computer Science UIL. A couple of days before this hackathon, I read an article about the importance of crowdsourcing, and I realized that many of the apps that I had downloaded didn't emphasize the crowdsourcing aspect, which is huge to the learning process. That's how I came up with the idea to create this app.
+I have multiple apps on my phone for programming quizzes, and I really liked how using them helped me in Computer Science UIL. A couple of days before the hackathon that I created this app in, I read an article about the importance of crowdsourcing, and I realized that many of the apps that I had downloaded didn't emphasize the crowdsourcing aspect, which is essential to the learning process. That's how I came up with the idea to create this app.
 
 ## What it does
 This is an educational app for learning different aspects of multiple programming languages through quizzes. This app places emphasis on crowdsourcing, as each user that signs up through the app is able to create their own questions in addition to completing quizzes. This allows for question content to be the most up-to-date as possible, enhancing the learning experience without the need for out-dated pre-existing question databases. By completing the quiz questions with the highest percentage correct as possible, you can compete with others to become the best programmer out there!
