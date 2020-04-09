@@ -2,9 +2,8 @@
     <string name="app_name">CrowdCS</string>
 
     <string name="back4app_server_url">https://parseapi.back4app.com/</string>
-    <!-- Change the following strings as required -->
-    <string name="back4app_app_id">zc3wRDwQembnooGVdm2yJ2lIyw7LVbmSnlkeWnBQ</string>
-    <string name="back4app_client_key">PNesqG4SISLrelMhKX1YVpeEjjV0jWU4BFpzILli</string>
+    <string name="back4app_app_id">RESTRICTED</string>
+    <string name="back4app_client_key">RESTRICTED</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="signUp">Sign Up</string>
