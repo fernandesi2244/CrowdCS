@@ -34,5 +34,5 @@ I learned a lot about using Android Studio and how to manipulate various compone
 In the future, I plan on adding several features including:
 - Leaderboard: There will be a leaderboard that ranks users based on their quiz question accuracy. This will enable competition between players in the fight to become the best programmer!
 - Connect with Others: Users will be able to connect with other user accounts, enabling them to keep track of each other's progress as well as be more engaged with the app.
-- Question Selection Scheme: I will need to come up with a better algorithm for selecting questions from the online database for each programming language.
+- Question Selection Scheme: I will need to come up with a better algorithm for selecting questions from the online database for each programming language as the database increases in size.
 - And most importantly... Dark Theme
